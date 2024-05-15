@@ -4,17 +4,16 @@ using namespace std;
 
 int main() {
 	
-	const int SIZE = 10;
-	//init
+	const int SIZE = 5;
+	int summ = 0;
 	int arr[SIZE];
-	srand(time(0));
-	//fill array with random numbers
-	//some bl
-	//result
 	for (size_t i = 0;i < SIZE;i++) {
-		arr[i] = rand() % 20 - 10;
-		cout << arr[i] << " ";
+		cout << "Enter length of 5 sides: ";
+		cin >> arr[i];
 	}
+	summ = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+	
+	cout << summ << " ";
 	cout << endl;
 	return 0;
 }
